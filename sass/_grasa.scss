@@ -1,0 +1,60 @@
+/*mobile first 0px-500px*/
+
+.lanzamiento{
+    grid-area: lanzamiento;
+    background-color: #1A2026;
+    border-radius: 20px;
+    margin: 15px;
+}
+
+.album-grasa{
+    display: grid;
+    grid-template-areas:
+    "album-intro"
+    "cover"
+    "lista-temas"
+    "video"
+    "antecedentes"
+    "lanzamiento";
+}
+
+@media(min-width:768px){ /*768px en adelante*/
+
+    .album-grasa{
+        display: grid;
+        grid-template-areas:
+        "album-intro    album-intro"
+        "cover          cover"
+        "lista-temas    lista-temas"
+        "video          video"
+        "antecedentes   antecedentes"
+        "lanzamiento    lanzamiento";
+    }
+}
+
+@media(min-width:1024px){ /*1024px en adelante*/
+    .album-grasa{
+        display: grid;
+        grid-template-areas:
+        "album-intro    album-intro     album-intro"
+        "cover          cover           cover"
+        "lista-temas    lista-temas     lista-temas"
+        "video          video           video"
+        "antecedentes   antecedentes    antecedentes"
+        "lanzamiento    lanzamiento     lanzamiento";
+    }
+}
+
+@media(min-width:1200px){ /*1200px en adelante*/
+
+    .album-grasa{
+        display: grid;
+        grid-template-areas:
+        "album-intro    album-intro     album-intro"
+        "cover          cover           cover"
+        "lista-temas    lista-temas     lista-temas"
+        "video          video           video"
+        "antecedentes   antecedentes    antecedentes"
+        "lanzamiento    lanzamiento     lanzamiento";
+    }
+}

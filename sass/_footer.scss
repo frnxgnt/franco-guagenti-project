@@ -1,0 +1,18 @@
+.redes{
+    grid-area: redes;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: #1A2026;
+    margin-top: 200px;
+
+    .redes-nav-a svg {
+        width: 25px;
+        height: 25px;
+        margin: 5px;
+        padding: 5px;
+        color: #227CF2
+    }
+}
