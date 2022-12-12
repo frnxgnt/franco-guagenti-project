@@ -10,11 +10,8 @@ body {
 }
 
 header {
-  grid-area: header;
-  width: 100%;
-  height: 70px;
-  margin: 2px;
   background: #1A2026;
+  grid-area: header;
 }
 
 html {
@@ -56,7 +53,8 @@ p {
   grid-area: video;
   width: 90%;
 }
-.video .video iframe {
+
+.video iframe {
   width: 90%;
   margin: 15px;
 }
@@ -100,7 +98,7 @@ p {
     grid-area: video;
     width: 90%;
   }
-  .video .video iframe {
+  .video iframe {
     width: 70%;
     margin: 15px;
   }
@@ -114,7 +112,7 @@ p {
     grid-area: video;
     width: 80%;
   }
-  .video .video iframe {
+  .video iframe {
     width: 80%;
     margin: 15px;
   }
@@ -131,7 +129,6 @@ nav ul {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
   justify-content: space-around;
-  align-items: center;
   justify-items: center;
   list-style-type: none;
   font-family: Montserrat;
@@ -265,7 +262,6 @@ nav a {
 }
 @media (min-width: 1024px) {
   /*1024px en adelante*/
-  /* grid formacion-fotos*/
   .formacion {
     display: grid;
     grid-area: formacion;
@@ -310,36 +306,37 @@ nav a {
 }
 /*mobile first 0px-500px*/
 .debut {
-  grid-area: debut;
   background-color: #1A2026;
+  grid-area: debut;
   border-radius: 20px;
   margin: 15px;
 }
 
 .album-seru {
   display: grid;
-  grid-template-areas: "album-intro" "cover" "lista-temas" "video" "antecedentes" "antecedentes" "debut";
+  grid-template-columns: auto;
+  grid-template-areas: "album-intro" "cover" "lista-temas" "video" "antecedentes" "debut";
 }
 
 @media (min-width: 768px) {
   /*768px en adelante*/
   .album-seru {
     display: grid;
-    grid-template-areas: "album-intro    album-intro" "cover          cover" "lista-temas    lista-temas" "video          video" "antecedentes   antecedentes" "antecedentes   antecedentes" "debut          debut" "redes          redes";
+    grid-template-areas: "album-intro    album-intro" "cover          cover" "lista-temas    lista-temas" "video          video" "antecedentes   antecedentes" "debut          debut";
   }
 }
 @media (min-width: 1024px) {
   /*1024px en adelante*/
   .album-seru {
     display: grid;
-    grid-template-areas: "album-intro    album-intro     album-intro" "cover          cover           cover" "lista-temas    lista-temas     lista-temas" "video          video           video" "antecedentes   antecedentes    antecedentes" "antecedentes   antecedentes    antecedentes" "debut          debut           debut";
+    grid-template-areas: "album-intro    album-intro     album-intro" "cover          cover           cover" "lista-temas    lista-temas     lista-temas" "video          video           video" "antecedentes   antecedentes    antecedentes" "debut          debut           debut";
   }
 }
 @media (min-width: 1200px) {
   /*1200px en adelante*/
   .album-seru {
     display: grid;
-    grid-template-areas: "album-intro    album-intro     album-intro" "cover          cover           cover" "lista-temas    lista-temas     lista-temas" "video          video           video" "antecedentes   antecedentes    antecedentes" "antecedentes   antecedentes    antecedentes" "debut          debut           debut";
+    grid-template-areas: "album-intro    album-intro     album-intro" "cover          cover           cover" "lista-temas    lista-temas     lista-temas" "video          video           video" "antecedentes   antecedentes    antecedentes" "debut          debut           debut";
   }
 }
 /*mobile first 0px-500px*/

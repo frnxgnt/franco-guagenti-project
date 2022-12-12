@@ -1,20 +1,21 @@
 /*mobile first 0px-500px*/
 
 .debut {
-    background-color: #1A2026;
+    background-color: $colorDiv;
     grid-area: debut;
     border-radius: 20px;
     margin: 15px;
 }
 
+
 .album-seru {
     display: grid;
+    grid-template-columns: auto;
     grid-template-areas:
         "album-intro"
         "cover"
         "lista-temas"
         "video"
-        "antecedentes"
         "antecedentes"
         "debut";
 }
@@ -30,9 +31,7 @@
             "lista-temas    lista-temas"
             "video          video"
             "antecedentes   antecedentes"
-            "antecedentes   antecedentes"
-            "debut          debut"
-            "redes          redes";
+            "debut          debut";
     }
 
 }
@@ -47,7 +46,6 @@
             "cover          cover           cover"
             "lista-temas    lista-temas     lista-temas"
             "video          video           video"
-            "antecedentes   antecedentes    antecedentes"
             "antecedentes   antecedentes    antecedentes"
             "debut          debut           debut";
     }
@@ -64,7 +62,6 @@
             "cover          cover           cover"
             "lista-temas    lista-temas     lista-temas"
             "video          video           video"
-            "antecedentes   antecedentes    antecedentes"
             "antecedentes   antecedentes    antecedentes"
             "debut          debut           debut";
     }

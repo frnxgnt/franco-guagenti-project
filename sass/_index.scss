@@ -2,7 +2,7 @@
 
 .intro {
     grid-area: intro;
-    background-color: #1A2026;
+    background-color: $colorDiv;
     border-radius: 20px;
     margin: 10px;
     padding: 10px;
@@ -11,7 +11,7 @@
 
 .intro-formacion {
     grid-area: intro-formacion;
-    background-color: #1A2026;
+    background-color: $colorDiv;
     border-radius: 20px;
     margin: 60px;
     padding: 10px;
@@ -27,7 +27,7 @@
     justify-content: center;
     padding: 10px;
     margin: 15px;
-    background-color: #1A2026;
+    background-color: $colorDiv;
     border-radius: 20px;
     text-align: center;
     margin-top: 60px;
@@ -48,7 +48,7 @@
     grid-area: formacion;
     justify-content: center;
     align-items: center;
-    background-color: #1A2026;
+    background-color: $colorDiv;
     gap: 20px;
     border-radius: 20px;
     padding: 1px;
@@ -83,7 +83,7 @@
         grid-area: formacion;
         justify-content: center;
         align-items: center;
-        background-color: #1A2026;
+        background-color: $colorDiv;
         gap: 20px;
         border-radius: 20px;
         padding: 1px;
@@ -109,7 +109,7 @@
         grid-area: formacion;
         justify-content: center;
         align-items: center;
-        background-color: #1A2026;
+        background-color: $colorDiv;
         gap: 20px;
         border-radius: 20px;
         padding: 1px;

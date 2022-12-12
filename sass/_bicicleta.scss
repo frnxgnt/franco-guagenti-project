@@ -1,13 +1,13 @@
 .contexto {
     grid-area: contexto;
-    background-color: #1A2026;
+    background-color: $colorDiv;
     border-radius: 20px;
     margin: 15px;
 }
 
 .presentacion {
     grid-area: presentacion;
-    background-color: #1A2026;
+    background-color: $colorDiv;
     border-radius: 20px;
     margin: 15px;
 }
