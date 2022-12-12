@@ -18,7 +18,7 @@
     text-align: center;
 }
 
-.discos{
+.discos {
     grid-area: discos;
     display: flex;
     flex-direction: row;
@@ -30,7 +30,7 @@
     background-color: #1A2026;
     border-radius: 20px;
     text-align: center;
-    margin-top: 60px;    
+    margin-top: 60px;
 }
 
 .discos-fotos {
@@ -39,12 +39,11 @@
     transition: 2s;
 }
 
-.discos-fotos:hover{
+.discos-fotos:hover {
     transform: scale(1.2);
 }
 
-
-.formacion{
+.formacion {
     display: grid;
     grid-area: formacion;
     justify-content: center;
@@ -54,30 +53,32 @@
     border-radius: 20px;
     padding: 1px;
     margin: 15px;
-
-    .formacion-fotos{
-        transition-property: all;
-        transition-duration: 2s;
-    }
-
-        .formacion-fotos img:hover{
-            transform: scale(1.2);
-        }
 }
 
-.main-grid{
+.formacion-fotos {
+    transition-property: all;
+    transition-duration: 2s;
+}
+
+.formacion-fotos img:hover {
+    transform: scale(1.2);
+}
+
+.main-grid {
     display: grid;
     grid-template-areas:
-    "intro"
-    "intro"
-    "discos" 
-    "intro-formacion"
-    "formacion";
+        "intro"
+        "intro"
+        "discos"
+        "intro-formacion"
+        "formacion";
 }
 
 
-@media(min-width:768px){ /*768px en adelante*/
-    .formacion{
+@media(min-width:768px) {
+
+    /*768px en adelante*/
+    .formacion {
         display: grid;
         grid-area: formacion;
         justify-content: center;
@@ -89,21 +90,21 @@
         margin: 15px;
     }
 
-    .main-grid{
+    .main-grid {
         display: grid;
         grid-template-areas:
-        "intro          intro"
-        "intro          intro"
-        "discos         discos" 
-        "intro-formacion intro-formacion"
-        "formacion      formacion";
+            "intro          intro"
+            "intro          intro"
+            "discos         discos"
+            "intro-formacion intro-formacion"
+            "formacion      formacion";
     }
 }
 
-@media(min-width:1024px){ /*1024px en adelante*/
+@media(min-width:1024px) {
+    /*1024px en adelante*/
 
-    /* grid formacion-fotos*/
-    .formacion{
+    .formacion {
         display: grid;
         grid-area: formacion;
         justify-content: center;
@@ -113,25 +114,27 @@
         border-radius: 20px;
         padding: 1px;
         margin: 15px;
-
-        .formacion-fotos img{
-            width: 100%;
-        }
     }
 
-    .main-grid{
+    .formacion-fotos img {
+        width: 100%;
+    }
+
+    .main-grid {
         display: grid;
         grid-template-areas:
-        "intro          intro          intro"
-        "intro          intro          intro"
-        "discos         discos         discos" 
-        "intro-formacion intro-formacion intro-formacion"
-        "formacion      formacion      formacion";
+            "intro          intro          intro"
+            "intro          intro          intro"
+            "discos         discos         discos"
+            "intro-formacion intro-formacion intro-formacion"
+            "formacion      formacion      formacion";
     }
 }
 
-@media(min-width:1200px){ /*1200px en adelante*/
-    .formacion{
+@media(min-width:1200px) {
+    /*1200px en adelante*/
+
+    .formacion {
         display: grid;
         grid-area: formacion;
         grid-template-columns: auto auto;
@@ -142,32 +145,21 @@
         border-radius: 20px;
         padding: 1px;
         margin: 15px;
-
-        .formacion-fotos img{
-            width: 100%;
-            margin: 15px;
-                      
-        }
     }
 
-    .main-grid{
+    .formacion-fotos img {
+        width: 100%;
+        margin: 15px;
+
+    }
+
+    .main-grid {
         display: grid;
         grid-template-areas:
-        "intro          intro          intro"
-        "intro          intro          intro"
-        "discos         discos         discos" 
-        "intro-formacion intro-formacion intro-formacion"
-        "formacion      formacion      formacion";
+            "intro          intro          intro"
+            "intro          intro          intro"
+            "discos         discos         discos"
+            "intro-formacion intro-formacion intro-formacion"
+            "formacion      formacion      formacion";
     }
 }
-
-    
-
-
-
-
-
-
-
-
-

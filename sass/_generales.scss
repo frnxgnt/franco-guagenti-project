@@ -1,33 +1,35 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
 body {
-    background-color: #02060D ;
+    background-color: #02060D;
     min-height: 100vh;
-   
+
 }
 
-header{
+header {
+    background: #1A2026;
     grid-area: header;
     width: 100%;
     height: 70px;
-    margin: 2px;
-    background: #1A2026;
+    margin: 2px;   
 }
 
-html{
+html {
     font-size: 62.5%;
     font-family: Montserrat;
 }
 
 img {
     width: 100%;
-    
+
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
     font-family: Montserrat;
     font-weight: 700;
     color: #F2F2F2;
@@ -51,32 +53,34 @@ p {
     color: #F2F2F2;
 }
 
-.video{
-	grid-area: video;
+.video {
+    grid-area: video;
     width: 90%;
 
-    .video iframe{
+    .video iframe {
         width: 90%;
         margin: 15px;
     }
 }
 
+/* clases que se repiten en todos los HTML*/
+
 .album-intro {
-	grid-area: album-intro;
+    grid-area: album-intro;
     margin: 15px;
     padding: 10px;
     background-color: #1A2026;
     border-radius: 20px;
 }
 
-.cover{
-	grid-area: cover;
+.cover {
+    grid-area: cover;
     margin: 10px;
     width: 50%;
 }
 
-.lista-temas{
-	grid-area: lista-temas;
+.lista-temas {
+    grid-area: lista-temas;
     width: 50%;
     margin: 15px;
     padding: 1px;
@@ -86,40 +90,43 @@ p {
     font-size: 14px;
 }
 
-.antecedentes{
-	grid-area: antecedentes;
+.antecedentes {
+    grid-area: antecedentes;
     background-color: #1A2026;
     border-radius: 20px;
     margin: 15px;
 }
 
-@media(min-width:768px){ /*768px en adelante*/
-    .video{
+@media(min-width:768px) {
+    /*768px en adelante*/
+    
+    .video {
         grid-area: video;
         width: 90%;
+
+        .video iframe {
+            width: 70%;
+            margin: 15px;
+        }
     }
-    
-    .video iframe{
-        width: 70%;
-        margin: 15px;
-    }
-    
+
     nav ul li a {
         font-size: 15px;
     }
 }
 
 
-@media(min-width:1024px){ /*1024px en adelante*/
+@media(min-width:1024px) {
+    /*1024px en adelante*/
 
-    .video{
+    .video {
         grid-area: video;
         width: 80%;
-    }
 
-    .video iframe{
-        width: 80%;
-        margin: 15px;
+        .video iframe {
+            width: 80%;
+            margin: 15px;
+        }
     }
 
     nav ul li a {

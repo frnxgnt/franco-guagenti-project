@@ -1,72 +1,75 @@
-.contexto{
+.contexto {
     grid-area: contexto;
     background-color: #1A2026;
     border-radius: 20px;
     margin: 15px;
 }
 
-.presentacion{
+.presentacion {
     grid-area: presentacion;
     background-color: #1A2026;
     border-radius: 20px;
     margin: 15px;
 }
 
-.album-bicicleta{
+.album-bicicleta {
     display: grid;
     grid-template-areas:
-    "album-intro"
-    "cover"
-    "lista-temas"
-    "video"
-    "antecedentes"
-    "contexto"
-    "presentacion";
+        "album-intro"
+        "cover"
+        "lista-temas"
+        "video"
+        "antecedentes"
+        "contexto"
+        "presentacion";
 }
 
 
-@media(min-width:768px){ /*768px en adelante*/
+@media(min-width:768px) {
+    /*768px en adelante*/
 
-    .album-bicicleta{
+    .album-bicicleta {
         display: grid;
         grid-template-areas:
-        "album-intro    album-intro"
-        "cover          cover"
-        "lista-temas    lista-temas"
-        "video          video"
-        "antecedentes   antecedentes"
-        "contexto       contexto"
-        "presentacion   presentacion"
-        "redes          redes";
+            "album-intro    album-intro"
+            "cover          cover"
+            "lista-temas    lista-temas"
+            "video          video"
+            "antecedentes   antecedentes"
+            "contexto       contexto"
+            "presentacion   presentacion"
+            "redes          redes";
     }
 }
 
-@media(min-width:1024px){ /*1024px en adelante*/
+@media(min-width:1024px) {
+    /*1024px en adelante*/
 
-    .album-bicicleta{
+    .album-bicicleta {
         display: grid;
         grid-template-areas:
-        "album-intro    album-intro    album-intro"
-        "cover          cover          cover"
-        "lista-temas    lista-temas    lista-temas"
-        "video          video          video"
-        "antecedentes   antecedentes   antecedentes"
-        "contexto       contexto       contexto"
-        "presentacion   presentacion   presentacion";
+            "album-intro    album-intro    album-intro"
+            "cover          cover          cover"
+            "lista-temas    lista-temas    lista-temas"
+            "video          video          video"
+            "antecedentes   antecedentes   antecedentes"
+            "contexto       contexto       contexto"
+            "presentacion   presentacion   presentacion";
     }
 }
 
-@media(min-width:1200px){ /*1200px en adelante*/
+@media(min-width:1200px) {
+    /*1200px en adelante*/
 
-    .album-bicicleta{
+    .album-bicicleta {
         display: grid;
         grid-template-areas:
-        "album-intro    album-intro    album-intro"
-        "cover          cover          cover"
-        "lista-temas    lista-temas    lista-temas"
-        "video          video          video"
-        "antecedentes   antecedentes   antecedentes"
-        "contexto       contexto       contexto"
-        "presentacion   presentacion   presentacion";
+            "album-intro    album-intro    album-intro"
+            "cover          cover          cover"
+            "lista-temas    lista-temas    lista-temas"
+            "video          video          video"
+            "antecedentes   antecedentes   antecedentes"
+            "contexto       contexto       contexto"
+            "presentacion   presentacion   presentacion";
     }
 }

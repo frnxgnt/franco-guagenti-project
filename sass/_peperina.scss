@@ -1,70 +1,73 @@
 /*mobile first 0px-500px*/
 
-.critica{
+.critica {
     grid-area: critica;
     background-color: #1A2026;
     border-radius: 20px;
     margin: 15px;
 }
 
-.album-peperina{
+.album-peperina {
     display: grid;
     grid-template-areas:
-    "album-intro"
-    "cover"
-    "lista-temas"
-    "video"
-    "antecedentes"
-    "contexto"
-    "presentacion"
-    "critica";
+        "album-intro"
+        "cover"
+        "lista-temas"
+        "video"
+        "antecedentes"
+        "contexto"
+        "presentacion"
+        "critica";
 }
 
-@media(min-width:768px){ /*768px en adelante*/
+@media(min-width:768px) {
+    /*768px en adelante*/
 
-    .album-peperina{
+    .album-peperina {
         display: grid;
         grid-template-areas:
-        "album-intro    album-intro"
-        "cover          cover"
-        "lista-temas    lista-temas"
-        "video          video"
-        "antecedentes   antecedentes"
-        "contexto       contexto"
-        "presentacion   presentacion"
-        "critica        critica"
-        "redes          redes";
+            "album-intro    album-intro"
+            "cover          cover"
+            "lista-temas    lista-temas"
+            "video          video"
+            "antecedentes   antecedentes"
+            "contexto       contexto"
+            "presentacion   presentacion"
+            "critica        critica"
+            "redes          redes";
     }
 }
 
-@media(min-width:1024px){ /*1024px en adelante*/
+@media(min-width:1024px) {
+    /*1024px en adelante*/
 
-    .album-peperina{
+    .album-peperina {
         display: grid;
         grid-template-areas:
-        "album-intro    album-intro    album-intro"
-        "cover          cover          cover"
-        "lista-temas    lista-temas    lista-temas"
-        "video          video          video"
-        "antecedentes   antecedentes   antecedentes"
-        "contexto       contexto       contexto"
-        "presentacion   presentacion   presentacion"
-        "critica        critica        critica";
+            "album-intro    album-intro    album-intro"
+            "cover          cover          cover"
+            "lista-temas    lista-temas    lista-temas"
+            "video          video          video"
+            "antecedentes   antecedentes   antecedentes"
+            "contexto       contexto       contexto"
+            "presentacion   presentacion   presentacion"
+            "critica        critica        critica";
     }
 }
 
-@media(min-width:1200px){ /*1200px en adelante*/
+@media(min-width:1200px) {
+    /*1200px en adelante*/
 
-    .album-peperina{
+    .album-peperina {
         display: grid;
         grid-template-areas:
-        "album-intro    album-intro    album-intro"
-        "cover          cover          cover"
-        "lista-temas    lista-temas    lista-temas"
-        "video          video          video"
-        "antecedentes   antecedentes   antecedentes"
-        "contexto       contexto       contexto"
-        "presentacion   presentacion   presentacion"
-        "critica        critica        critica";
+            "album-intro    album-intro    album-intro"
+            "cover          cover          cover"
+            "lista-temas    lista-temas    lista-temas"
+            "video          video          video"
+            "antecedentes   antecedentes   antecedentes"
+            "contexto       contexto       contexto"
+            "presentacion   presentacion   presentacion"
+            "critica        critica        critica";
     }
 }

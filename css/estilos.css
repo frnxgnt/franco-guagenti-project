@@ -26,7 +26,9 @@ img {
   width: 100%;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: Montserrat;
   font-weight: 700;
   color: #F2F2F2;
@@ -59,6 +61,7 @@ p {
   margin: 15px;
 }
 
+/* clases que se repiten en todos los HTML*/
 .album-intro {
   grid-area: album-intro;
   margin: 15px;
@@ -91,12 +94,13 @@ p {
   margin: 15px;
 }
 
-@media (min-width: 768px) { /*768px en adelante*/
+@media (min-width: 768px) {
+  /*768px en adelante*/
   .video {
     grid-area: video;
     width: 90%;
   }
-  .video iframe {
+  .video .video iframe {
     width: 70%;
     margin: 15px;
   }
@@ -104,12 +108,13 @@ p {
     font-size: 15px;
   }
 }
-@media (min-width: 1024px) { /*1024px en adelante*/
+@media (min-width: 1024px) {
+  /*1024px en adelante*/
   .video {
     grid-area: video;
     width: 80%;
   }
-  .video iframe {
+  .video .video iframe {
     width: 80%;
     margin: 15px;
   }
@@ -124,7 +129,7 @@ p {
 }
 nav ul {
   display: grid;
-  grid-template-columns: 15% 15% 15% 15% 15% 15%;
+  grid-template-columns: auto auto auto auto auto auto;
   justify-content: space-around;
   align-items: center;
   justify-items: center;
@@ -162,7 +167,7 @@ nav a {
   background-color: #1A2026;
   margin-top: 200px;
 }
-.redes .redes-nav-a svg {
+.redes svg {
   width: 25px;
   height: 25px;
   margin: 5px;
@@ -225,11 +230,13 @@ nav a {
   padding: 1px;
   margin: 15px;
 }
-.formacion .formacion-fotos {
+
+.formacion-fotos {
   transition-property: all;
   transition-duration: 2s;
 }
-.formacion .formacion-fotos img:hover {
+
+.formacion-fotos img:hover {
   transform: scale(1.2);
 }
 
@@ -238,7 +245,8 @@ nav a {
   grid-template-areas: "intro" "intro" "discos" "intro-formacion" "formacion";
 }
 
-@media (min-width: 768px) { /*768px en adelante*/
+@media (min-width: 768px) {
+  /*768px en adelante*/
   .formacion {
     display: grid;
     grid-area: formacion;
@@ -255,7 +263,8 @@ nav a {
     grid-template-areas: "intro          intro" "intro          intro" "discos         discos" "intro-formacion intro-formacion" "formacion      formacion";
   }
 }
-@media (min-width: 1024px) { /*1024px en adelante*/
+@media (min-width: 1024px) {
+  /*1024px en adelante*/
   /* grid formacion-fotos*/
   .formacion {
     display: grid;
@@ -268,7 +277,7 @@ nav a {
     padding: 1px;
     margin: 15px;
   }
-  .formacion .formacion-fotos img {
+  .formacion-fotos img {
     width: 100%;
   }
   .main-grid {
@@ -276,7 +285,8 @@ nav a {
     grid-template-areas: "intro          intro          intro" "intro          intro          intro" "discos         discos         discos" "intro-formacion intro-formacion intro-formacion" "formacion      formacion      formacion";
   }
 }
-@media (min-width: 1200px) { /*1200px en adelante*/
+@media (min-width: 1200px) {
+  /*1200px en adelante*/
   .formacion {
     display: grid;
     grid-area: formacion;
@@ -289,7 +299,7 @@ nav a {
     padding: 1px;
     margin: 15px;
   }
-  .formacion .formacion-fotos img {
+  .formacion-fotos img {
     width: 100%;
     margin: 15px;
   }
@@ -311,19 +321,22 @@ nav a {
   grid-template-areas: "album-intro" "cover" "lista-temas" "video" "antecedentes" "antecedentes" "debut";
 }
 
-@media (min-width: 768px) { /*768px en adelante*/
+@media (min-width: 768px) {
+  /*768px en adelante*/
   .album-seru {
     display: grid;
     grid-template-areas: "album-intro    album-intro" "cover          cover" "lista-temas    lista-temas" "video          video" "antecedentes   antecedentes" "antecedentes   antecedentes" "debut          debut" "redes          redes";
   }
 }
-@media (min-width: 1024px) { /*1024px en adelante*/
+@media (min-width: 1024px) {
+  /*1024px en adelante*/
   .album-seru {
     display: grid;
     grid-template-areas: "album-intro    album-intro     album-intro" "cover          cover           cover" "lista-temas    lista-temas     lista-temas" "video          video           video" "antecedentes   antecedentes    antecedentes" "antecedentes   antecedentes    antecedentes" "debut          debut           debut";
   }
 }
-@media (min-width: 1200px) { /*1200px en adelante*/
+@media (min-width: 1200px) {
+  /*1200px en adelante*/
   .album-seru {
     display: grid;
     grid-template-areas: "album-intro    album-intro     album-intro" "cover          cover           cover" "lista-temas    lista-temas     lista-temas" "video          video           video" "antecedentes   antecedentes    antecedentes" "antecedentes   antecedentes    antecedentes" "debut          debut           debut";
@@ -342,19 +355,22 @@ nav a {
   grid-template-areas: "album-intro" "cover" "lista-temas" "video" "antecedentes" "lanzamiento";
 }
 
-@media (min-width: 768px) { /*768px en adelante*/
+@media (min-width: 768px) {
+  /*768px en adelante*/
   .album-grasa {
     display: grid;
     grid-template-areas: "album-intro    album-intro" "cover          cover" "lista-temas    lista-temas" "video          video" "antecedentes   antecedentes" "lanzamiento    lanzamiento";
   }
 }
-@media (min-width: 1024px) { /*1024px en adelante*/
+@media (min-width: 1024px) {
+  /*1024px en adelante*/
   .album-grasa {
     display: grid;
     grid-template-areas: "album-intro    album-intro     album-intro" "cover          cover           cover" "lista-temas    lista-temas     lista-temas" "video          video           video" "antecedentes   antecedentes    antecedentes" "lanzamiento    lanzamiento     lanzamiento";
   }
 }
-@media (min-width: 1200px) { /*1200px en adelante*/
+@media (min-width: 1200px) {
+  /*1200px en adelante*/
   .album-grasa {
     display: grid;
     grid-template-areas: "album-intro    album-intro     album-intro" "cover          cover           cover" "lista-temas    lista-temas     lista-temas" "video          video           video" "antecedentes   antecedentes    antecedentes" "lanzamiento    lanzamiento     lanzamiento";
@@ -379,19 +395,22 @@ nav a {
   grid-template-areas: "album-intro" "cover" "lista-temas" "video" "antecedentes" "contexto" "presentacion";
 }
 
-@media (min-width: 768px) { /*768px en adelante*/
+@media (min-width: 768px) {
+  /*768px en adelante*/
   .album-bicicleta {
     display: grid;
     grid-template-areas: "album-intro    album-intro" "cover          cover" "lista-temas    lista-temas" "video          video" "antecedentes   antecedentes" "contexto       contexto" "presentacion   presentacion" "redes          redes";
   }
 }
-@media (min-width: 1024px) { /*1024px en adelante*/
+@media (min-width: 1024px) {
+  /*1024px en adelante*/
   .album-bicicleta {
     display: grid;
     grid-template-areas: "album-intro    album-intro    album-intro" "cover          cover          cover" "lista-temas    lista-temas    lista-temas" "video          video          video" "antecedentes   antecedentes   antecedentes" "contexto       contexto       contexto" "presentacion   presentacion   presentacion";
   }
 }
-@media (min-width: 1200px) { /*1200px en adelante*/
+@media (min-width: 1200px) {
+  /*1200px en adelante*/
   .album-bicicleta {
     display: grid;
     grid-template-areas: "album-intro    album-intro    album-intro" "cover          cover          cover" "lista-temas    lista-temas    lista-temas" "video          video          video" "antecedentes   antecedentes   antecedentes" "contexto       contexto       contexto" "presentacion   presentacion   presentacion";
@@ -410,19 +429,22 @@ nav a {
   grid-template-areas: "album-intro" "cover" "lista-temas" "video" "antecedentes" "contexto" "presentacion" "critica";
 }
 
-@media (min-width: 768px) { /*768px en adelante*/
+@media (min-width: 768px) {
+  /*768px en adelante*/
   .album-peperina {
     display: grid;
     grid-template-areas: "album-intro    album-intro" "cover          cover" "lista-temas    lista-temas" "video          video" "antecedentes   antecedentes" "contexto       contexto" "presentacion   presentacion" "critica        critica" "redes          redes";
   }
 }
-@media (min-width: 1024px) { /*1024px en adelante*/
+@media (min-width: 1024px) {
+  /*1024px en adelante*/
   .album-peperina {
     display: grid;
     grid-template-areas: "album-intro    album-intro    album-intro" "cover          cover          cover" "lista-temas    lista-temas    lista-temas" "video          video          video" "antecedentes   antecedentes   antecedentes" "contexto       contexto       contexto" "presentacion   presentacion   presentacion" "critica        critica        critica";
   }
 }
-@media (min-width: 1200px) { /*1200px en adelante*/
+@media (min-width: 1200px) {
+  /*1200px en adelante*/
   .album-peperina {
     display: grid;
     grid-template-areas: "album-intro    album-intro    album-intro" "cover          cover          cover" "lista-temas    lista-temas    lista-temas" "video          video          video" "antecedentes   antecedentes   antecedentes" "contexto       contexto       contexto" "presentacion   presentacion   presentacion" "critica        critica        critica";
@@ -471,13 +493,15 @@ nav a {
   margin: 15px;
 }
 
-@media (min-width: 768px) { /*768px en adelante*/
+@media (min-width: 768px) {
+  /*768px en adelante*/
   .miembros {
     display: grid;
     grid-template-areas: "charly     charly" "pedrito    pedrito" "lebon      lebon" "moro       moro";
   }
 }
-@media (min-width: 1024px) { /*1024px en adelante*/
+@media (min-width: 1024px) {
+  /*1024px en adelante*/
   .miembros {
     display: grid;
     grid-template-areas: "charly     charly      charly" "pedrito    pedrito     pedrito" "lebon      lebon       lebon" "moro       moro        moro";
@@ -487,7 +511,8 @@ nav a {
     margin: 15px;
   }
 }
-@media (min-width: 1200px) { /*1200px en adelante*/
+@media (min-width: 1200px) {
+  /*1200px en adelante*/
   /* Grids para html Miembros */
   .miembros {
     display: grid;
@@ -501,7 +526,7 @@ nav a {
     grid-area: video;
     width: 55%;
   }
-  .video iframe {
+  .video .video iframe {
     width: 55%;
     margin: 15px;
   }

@@ -1,12 +1,12 @@
 /*mobile first 0px-500px*/
 
-.miembros{
+.miembros {
     display: grid;
     grid-template-areas:
-    "charly"
-    "pedrito"
-    "lebon"
-    "moro";
+        "charly"
+        "pedrito"
+        "lebon"
+        "moro";
 }
 
 .charly {
@@ -49,26 +49,29 @@
 
 
 
-@media(min-width:768px){ /*768px en adelante*/
+@media(min-width:768px) {
+    /*768px en adelante*/
 
-    .miembros{
+    .miembros {
         display: grid;
         grid-template-areas:
-        "charly     charly"
-        "pedrito    pedrito"
-        "lebon      lebon"
-        "moro       moro" ;
+            "charly     charly"
+            "pedrito    pedrito"
+            "lebon      lebon"
+            "moro       moro";
     }
 }
 
-@media(min-width:1024px){ /*1024px en adelante*/
-    .miembros{
+@media(min-width:1024px) {
+
+    /*1024px en adelante*/
+    .miembros {
         display: grid;
         grid-template-areas:
-        "charly     charly      charly"
-        "pedrito    pedrito     pedrito"
-        "lebon      lebon       lebon"
-        "moro       moro        moro" ;
+            "charly     charly      charly"
+            "pedrito    pedrito     pedrito"
+            "lebon      lebon       lebon"
+            "moro       moro        moro";
     }
 
     .miembros div img {
@@ -77,16 +80,17 @@
     }
 }
 
-@media(min-width:1200px){ /*1200px en adelante*/
+@media(min-width:1200px) {
+    /*1200px en adelante*/
 
     /* Grids para html Miembros */
-    .miembros{
+    .miembros {
         display: grid;
         grid-template-areas:
-        "charly     charly      charly"
-        "pedrito    pedrito     pedrito"
-        "lebon      lebon       lebon"
-        "moro       moro        moro" ;
+            "charly     charly      charly"
+            "pedrito    pedrito     pedrito"
+            "lebon      lebon       lebon"
+            "moro       moro        moro";
     }
 
     .miembros div img {
@@ -94,17 +98,17 @@
         margin: 15px;
     }
 
-    .video{
+    .video {
         grid-area: video;
         width: 55%;
-    }
-    
-    .video iframe{
-        width: 55%;
-        margin: 15px;
+
+        .video iframe {
+            width: 55%;
+            margin: 15px;
+        }
     }
 
-    .cover{
+    .cover {
         grid-area: cover;
         margin: 15px;
         padding: 15px;
