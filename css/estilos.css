@@ -10,7 +10,7 @@ body {
 }
 
 header {
-  background: #1A2026;
+  background-color: #1A2026;
   grid-area: header;
 }
 
@@ -28,9 +28,9 @@ h2,
 h3 {
   font-family: Montserrat;
   font-weight: 700;
-  color: #F2F2F2;
   width: 100%;
   padding: 10px;
+  color: #F2F2F2;
 }
 
 h1 {
@@ -70,8 +70,11 @@ p {
 
 .cover {
   grid-area: cover;
-  margin: 10px;
+  margin: 15px;
   width: 50%;
+}
+.cover img {
+  margin: 5px;
 }
 
 .lista-temas {
@@ -79,10 +82,22 @@ p {
   width: 50%;
   margin: 15px;
   padding: 1px;
+  background-color: #02060D;
 }
 
 .lista-temas p {
   font-size: 14px;
+}
+
+.lista {
+  background-color: #02060D;
+}
+
+.botonLista {
+  width: 200px;
+  height: 40px;
+  font-size: large;
+  background-color: #227CF2;
 }
 
 .antecedentes {
@@ -165,8 +180,8 @@ nav a {
   margin-top: 200px;
 }
 .redes svg {
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
   margin: 5px;
   padding: 5px;
   color: #227CF2;

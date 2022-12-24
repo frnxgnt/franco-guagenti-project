@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Album Serú Girán">
     <meta name="keywords" content="seru, giran, banda, discos, album, biografia, discografía">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Serú Giran</title>
 </head>
@@ -57,16 +59,25 @@
             </div>
 
             <div class="lista-temas">
-                <h2>Lista de temas
-                    <p>Eiti-Leda 07:01</p>
-                    <p>El mendigo en el andén 03:42</p>
-                    <p>Separata 01:40</p>
-                    <p>Autos, Jets, Aviones, Barcos 04:11</p>
-                    <p>Serú Girán 07:35</p>
-                    <p>Seminare 03:32</p>
-                    <p>Voy a mil 03:07</p>
-                    <p>Cosmigonón 01:38</p>
-                </h2>
+
+                <p>
+                    <button class="btn btn-primary botonLista" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Lista de temas
+                    </button>
+                </p>
+                <div class="collapse" id="collapseExample">
+                    <div class="card lista card-body">
+                        <p>Eiti-Leda - 07:01</p>
+                        <p>El mendigo en el andén - 03:42</p>
+                        <p>Separata - 01:40</p>
+                        <p>Autos, Jets, Aviones, Barcos - 04:11</p>
+                        <p>Serú Girán - 07:35</p>
+                        <p>Seminare - 03:32</p>
+                        <p>Voy a mil - 03:07</p>
+                        <p>Cosmigonón - 01:38</p>
+                    </div>
+                </div>
             </div>
 
             <div class="video">
@@ -227,6 +238,10 @@
         </nav>
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 
 </body>
 

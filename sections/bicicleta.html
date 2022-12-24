@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Album Bicicleta">
     <meta name="keywords" content="seru, giran, banda, discos, album, biografia, discografía">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Bicicleta</title>
 </head>
@@ -58,16 +60,24 @@
             </div>
 
             <div class="lista-temas">
-                <h2>Lista de temas
-                    <p>A los jóvenes de ayer 09:25</p>
-                    <p>Cuánto tiempo más llevará 03:56</p>
-                    <p>Canción de Alicia en el país 04:26</p>
-                    <p>La luna de marzo 03:28</p>
-                    <p>Mientras miro las nuevas olas 03:58</p>
-                    <p>Desarma y sangra 03:40</p>
-                    <p>Tema de Nayla 06:54</p>
-                    <p>Encuentro con el diablo 05:00</p>
-                </h2>
+                
+                <p>
+                    <button class="btn btn-primary botonLista" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                      Lista de temas
+                    </button>
+                  </p>
+                  <div class="collapse lista" id="collapseExample">
+                    <div class="card lista card-body">
+                        <p>A los jóvenes de ayer - 09:25</p>
+                        <p>Cuánto tiempo más llevará - 03:56</p>
+                        <p>Canción de Alicia en el país - 04:26</p>
+                        <p>La luna de marzo - 03:28</p>
+                        <p>Mientras miro las nuevas olas - 03:58</p>
+                        <p>Desarma y sangra - 03:40</p>
+                        <p>Tema de Nayla - 06:54</p>
+                        <p>Encuentro con el diablo - 05:00</p>
+                    </div>
+                  </div>
             </div>
 
             <div class="video">
@@ -224,6 +234,10 @@
 
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 
 </body>
 

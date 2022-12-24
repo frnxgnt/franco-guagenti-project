@@ -73,8 +73,12 @@ p {
 
 .cover {
     grid-area: cover;
-    margin: 10px;
+    margin: 15px;
     width: 50%;
+
+    img{
+        margin: 5px;
+    }
 }
 
 .lista-temas {
@@ -82,10 +86,22 @@ p {
     width: 50%;
     margin: 15px;
     padding: 1px;
+    background-color: #02060D;
 }
 
 .lista-temas p {
     font-size: 14px;
+}
+
+.lista{
+    background-color: $colorFondo;
+}
+
+.botonLista{
+    width: 200px;
+    height: 40px;
+    font-size: large;
+    background-color: #227CF2;
 }
 
 .antecedentes {
