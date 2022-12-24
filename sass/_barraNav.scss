@@ -45,23 +45,26 @@ nav{
         transform: rotate(720deg);
     }
 
-    ul{
+    nav{
+    
+        ul{
 
-        display: grid;
-        grid-template-columns: auto auto auto auto auto auto;
-        justify-content: space-around;
-        justify-items: center;
-        list-style-type: none;
-        font-family: Montserrat;
-        align-items: center;
-        margin: 5px;
-   
-
-        a {
-            text-decoration: none;
-            font-size: 12px;
-            color: $colorFont;
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            justify-content: space-around;
+            justify-items: center;
             list-style-type: none;
+            font-family: Montserrat;
+            align-items: center;
+            margin: 5px;
+    
+
+            a {
+                text-decoration: none;
+                font-size: 12px;
+                color: $colorFont;
+                list-style-type: none;
+            }
         }
     }
 
@@ -82,22 +85,26 @@ nav{
         transform: rotate(720deg);
     }
 
-    ul{
+    nav{
+    
+        ul{
 
-        display: grid;
-        grid-template-columns: auto auto auto auto auto auto;
-        justify-content: space-around;
-        justify-items: center;
-        list-style-type: none;
-        font-family: Montserrat;
-        align-items: center;
-        margin: 5px;
-
-        a {
-            text-decoration: none;
-            font-size: 12px;
-            color: $colorFont;
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            justify-content: space-around;
+            justify-items: center;
             list-style-type: none;
+            font-family: Montserrat;
+            align-items: center;
+            margin: 5px;
+    
+
+            a {
+                text-decoration: none;
+                font-size: 12px;
+                color: $colorFont;
+                list-style-type: none;
+            }
         }
     }
 
@@ -117,22 +124,26 @@ nav{
         transform: rotate(720deg);
     }
 
-    ul{
+    nav{
+    
+        ul{
 
-        display: grid;
-        grid-template-columns: auto auto auto auto auto auto;
-        justify-content: space-around;
-        justify-items: center;
-        list-style-type: none;
-        font-family: Montserrat;
-        align-items: center;
-        margin: 5px;
-
-        a {
-            text-decoration: none;
-            font-size: 12px;
-            color: $colorFont;
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            justify-content: space-around;
+            justify-items: center;
             list-style-type: none;
+            font-family: Montserrat;
+            align-items: center;
+            margin: 5px;
+    
+
+            a {
+                text-decoration: none;
+                font-size: 12px;
+                color: $colorFont;
+                list-style-type: none;
+            }
         }
     }
 
