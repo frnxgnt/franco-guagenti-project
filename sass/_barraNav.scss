@@ -13,15 +13,15 @@ nav{
     }
         a {
             text-decoration: none;
-            font-size: 12px;
+            font-size: 10px;
             color: $colorFont;
             list-style-type: none;
         }
 }
 
 .inicio{
-    height: 62px;
-    width: 62px;
+    height: 40px;
+    width: 40px;
     border-radius: 60%;
     border: 1px solid $colorDiv;
     transition: all 2s;
@@ -31,3 +31,51 @@ nav{
     transform: rotate(720deg);
 }
 
+@media(min-width:768px){
+
+    .inicio{
+        height: 62px;
+        width: 62px;
+        border-radius: 60%;
+        border: 1px solid $colorDiv;
+        transition: all 2s;
+    }
+    
+    .inicio:hover{
+        transform: rotate(720deg);
+    }
+
+}
+
+
+@media(min-width:1024px){
+
+    .inicio{
+        height: 62px;
+        width: 62px;
+        border-radius: 60%;
+        border: 1px solid $colorDiv;
+        transition: all 2s;
+    }
+    
+    .inicio:hover{
+        transform: rotate(720deg);
+    }
+
+}
+
+@media(min-width:1200px){
+
+    .inicio{
+        height: 62px;
+        width: 62px;
+        border-radius: 60%;
+        border: 1px solid $colorDiv;
+        transition: all 2s;
+    }
+    
+    .inicio:hover{
+        transform: rotate(720deg);
+    }
+
+}
